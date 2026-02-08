@@ -1,218 +1,585 @@
 [
   {
-    "name": "Test 1: Web Scraping CSV",
-    "description": "Scraping de books.toscrape.com (5 paginas) para extraer libros a CSV con requests y html.parser",
-    "icon": "spider",
-    "status": "INCOMPLETE",
-    "file": "test-1/index.html",
-    "tags": ["incomplete", "batch-1", "web-scraping", "python", "csv"]
+    "name": "Test 47: Master QA & Final Report",
+    "description": "Audit completo y reporte final de todos los batches",
+    "file": "test-47/index.html",
+    "icon": "clipboard-check",
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "qa",
+      "report",
+      "final"
+    ]
   },
   {
-    "name": "Test 2: API de Tipos de Cambio",
-    "description": "Consumo de API REST para obtener tasas de cambio USD→EUR/GBP/ARS/JPY y guardar resultados en JSON",
-    "icon": "coins",
-    "status": "PASS",
-    "file": "test-2/index.html",
-    "tags": ["api", "json", "curl", "exchange-rates"]
+    "name": "Test 46: Accounts Portfolio Page",
+    "description": "Pagina portfolio de cuentas creadas",
+    "file": "test-46/index.html",
+    "icon": "id-card",
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "portfolio",
+      "accounts"
+    ]
   },
   {
-    "name": "Test 3: Web Scraping de Hockey",
-    "description": "Extraccion de datos tabulares desde HTML usando requests y HTMLParser de Python",
-    "icon": "hockey-puck",
-    "status": "PASS",
-    "file": "test-3/index.html",
-    "tags": ["web-scraping", "html", "parsing", "python"]
-  },
-  {
-    "name": "Test 4: API GraphQL SpaceX",
-    "description": "Consumo de API GraphQL para obtener lanzamientos historicos de SpaceX y guardar en JSON",
-    "icon": "rocket",
-    "status": "PASS",
-    "file": "test-4/index.html",
-    "tags": ["api", "graphql", "curl", "json", "spacex"]
-  },
-  {
-    "name": "Test 5: TODO App",
-    "description": "Aplicacion TODO list con HTML+CSS+JS inline, localStorage, dark theme y accent #ff6b35",
-    "icon": "check-square",
-    "status": "INCOMPLETE",
-    "file": "test-5/index.html",
-    "tags": ["incomplete", "batch-1", "html", "javascript", "todo-app"]
-  },
-  {
-    "name": "Test 6: API REST de Tareas",
-    "description": "API REST con Express.js para gestion de tareas usando JSON file storage (CRUD completo)",
-    "icon": "tasks",
-    "status": "PASS",
-    "file": "test-6/index.html",
-    "tags": ["api", "rest", "express", "nodejs", "json"]
-  },
-  {
-    "name": "Test 7: Monitor de Clima Multi-Ciudad",
-    "description": "Consumo de API Open-Meteo para obtener clima de Buenos Aires, Chicago y Tokyo con logging a CSV",
-    "icon": "cloud-sun",
-    "status": "PASS",
-    "file": "test-7/index.html",
-    "tags": ["api", "python", "requests", "csv", "weather"]
-  },
-  {
-    "name": "Test 8: Docker Todo App",
-    "description": "Aplicacion Todo List con Docker usando nginx:alpine, Dockerfile y docker-compose.yml en puerto 3000",
-    "icon": "docker",
-    "status": "PASS",
-    "file": "test-8/index.html",
-    "tags": ["docker", "nginx", "docker-compose", "container", "todo-app"]
-  },
-  {
-    "name": "Test 9: Monitor de Precios Web",
-    "description": "Script Bash que scrapea books.toscrape.com usando curl, grep y sed para extraer titulo y precio del primer libro y guardar en CSV",
-    "icon": "chart-line",
-    "status": "PASS",
-    "file": "test-9/index.html",
-    "tags": ["bash", "web-scraping", "curl", "grep", "sed", "csv"]
-  },
-  {
-    "name": "Test 10: Analizador de Logs",
-    "description": "Script Bash que analiza archivos .log, cuenta ERROR y WARNING con grep, y genera reporte en reports/log_summary.txt",
-    "icon": "file-alt",
-    "status": "PASS",
-    "file": "test-10/index.html",
-    "tags": ["bash", "logs", "grep", "monitoring", "report"]
-  },
-  {
-    "name": "Test 11: Site Watchdog",
-    "description": "Script Bash que monitorea la disponibilidad de un sitio web usando curl y genera alertas tras 3 fallos consecutivos",
-    "icon": "shield-heart",
-    "status": "PASS",
-    "file": "test-11/index.html",
-    "tags": ["bash", "curl", "monitoring", "site-watchdog", "alerts"]
-  },
-  {
-    "name": "Test 12: Image Downloader Gallery",
-    "description": "Descarga 10 imagenes de picsum.photos con Python requests (sleep 2s entre cada una) y genera gallery.html con grid y dark theme",
-    "icon": "images",
-    "status": "PASS",
-    "file": "test-12/index.html",
-    "tags": ["python", "requests", "gallery", "html", "css-grid", "dark-theme"]
-  },
-  {
-    "name": "Test 13: CSV a SQLite Pipeline",
-    "description": "Lectura de CSV, limpieza de precios (quita simbolo moneda), creacion de DB SQLite y query TOP 5 mas caros",
-    "icon": "database",
-    "status": "PASS",
-    "file": "test-13/index.html",
-    "tags": ["python", "csv", "sqlite", "data-cleaning", "sql"]
-  },
-  {
-    "name": "Test 14: Sports API",
-    "description": "Consulta a TheSportsDB API para Boca Juniors/Barcelona: busqueda de equipo y proximo fixture",
-    "icon": "futbol",
-    "status": "INCOMPLETE",
-    "file": "test-14/index.html",
-    "tags": ["incomplete", "batch-1", "api", "sports", "json"]
-  },
-  {
-    "name": "Test 15: News Monitor",
-    "description": "Script Python que descarga RSS de Hacker News, filtra noticias AI/OpenAI/GPT/LLM/Claude y exporta JSON",
-    "icon": "newspaper",
-    "status": "INCOMPLETE",
-    "file": "test-15/index.html",
-    "tags": ["incomplete", "batch-1", "python", "rss", "xml", "news"]
-  },
-  {
-    "name": "Test 16: RSS Digest",
-    "description": "Script Python que lee RSS de Hacker News y Lobsters, extrae articulos y genera digest HTML con dark theme",
-    "icon": "rss",
-    "status": "INCOMPLETE",
-    "file": "test-16/index.html",
-    "tags": ["incomplete", "batch-1", "python", "rss", "xml", "html"]
-  },
-  {
-    "name": "Test 17: Temp Email",
-    "description": "Creacion de cuenta temporal en mail.tm via API REST: dominio, registro, JWT token",
-    "icon": "at",
-    "status": "INCOMPLETE",
-    "file": "test-17/index.html",
-    "tags": ["incomplete", "batch-1", "api", "email", "jwt", "mail.tm"]
-  },
-  {
-    "name": "Test 18: Mail.tm Inbox Monitor",
-    "description": "Script Python que lee credenciales JWT, consulta API REST de Mail.tm para obtener mensajes del inbox y guarda logs estructurados en JSON",
-    "icon": "envelope-open-text",
-    "status": "PASS",
-    "file": "test-18/index.html",
-    "tags": ["python", "api", "jwt", "mail.tm", "rest", "urllib"]
-  },
-  {
-    "name": "Test 19: Research Report",
-    "description": "Generacion autonoma de reporte extenso (1500+ palabras) sobre web scraping best practices 2026",
-    "icon": "book-open",
-    "status": "INCOMPLETE",
-    "file": "test-19/index.html",
-    "tags": ["incomplete", "batch-1", "markdown", "report", "autonomous"]
-  },
-  {
-    "name": "Test 20: Web Scraping & Chart.js",
-    "description": "Scraping de scrapethissite.com para obtener paises y poblacion, generacion de visualizacion Top 10 con Chart.js (bar chart horizontal, dark theme)",
-    "icon": "chart-bar",
-    "status": "PASS",
-    "file": "test-20/index.html",
-    "tags": ["web-scraping", "python", "chart-js", "data-viz", "visualization"]
-  },
-  {
-    "name": "Test 21: Configuracion de Entorno",
-    "description": "Setup completo del workspace: Git config, IDENTITY.md, USER.md, TOOLS.md, SKILLS_INVENTORY.md con 20 capacidades",
-    "icon": "sliders",
-    "status": "PASS",
-    "file": "test-21/index.html",
-    "tags": ["setup", "config", "identity", "tools", "documentation"]
-  },
-  {
-    "name": "Test 22: GitHub Repo Automation",
-    "description": "Creacion automatica de repositorios GitHub via API, git init, push de codigo con README y LICENSE MIT para 3 proyectos",
-    "icon": "github",
-    "status": "PASS",
-    "file": "test-22/index.html",
-    "tags": ["github", "git", "api", "automation", "curl", "repository"]
-  },
-  {
-    "name": "Test 23: Gmail Email Automation",
-    "description": "Configuracion de envio de emails automatizado via Gmail SMTP con smtplib, soporte para HTML y adjuntos",
-    "icon": "envelope",
-    "status": "PASS",
-    "file": "test-23/index.html",
-    "tags": ["python", "smtp", "gmail", "email", "automation", "smtplib"]
-  },
-  {
-    "name": "Test 24: URL Shortener App",
-    "description": "App completa de acortador de URLs con Express + SQLite, frontend dark theme y deploy a GitHub",
+    "name": "Test 45: Link Checker & Report",
+    "description": "Escaneo de links y reporte de links rotos",
+    "file": "test-45/index.html",
     "icon": "link",
-    "status": "INCOMPLETE",
-    "file": "test-24/index.html",
-    "tags": ["incomplete", "batch-2", "express", "sqlite", "full-stack"]
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "qa",
+      "links",
+      "report"
+    ]
   },
   {
-    "name": "Test 25: Custom Toolbox Builder",
-    "description": "3 herramientas reutilizables: generador de reportes HTML, manager de GitHub, notificador de Telegram",
-    "icon": "toolbox",
-    "status": "INCOMPLETE",
-    "file": "test-25/index.html",
-    "tags": ["incomplete", "batch-2", "python", "toolbox", "self-enhancement"]
+    "name": "Test 44: Self-Monitoring Dashboard",
+    "description": "Dashboard de automonitoreo del bot",
+    "file": "test-44/index.html",
+    "icon": "chart-line",
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "dashboard",
+      "monitoring"
+    ]
   },
   {
-    "name": "Test 26: Live Dashboard",
-    "description": "Dashboard con datos live: exchange rates, clima, noticias AI, system info - auto-refresh cada 60s",
-    "icon": "tachometer-alt",
+    "name": "Test 43: Deploy Todo App Live",
+    "description": "Deploy de la Todo App como servicio web accesible",
+    "file": "test-43/index.html",
+    "icon": "globe",
+    "status": "PASS",
+    "tags": [
+      "batch-3",
+      "deploy",
+      "app",
+      "todo"
+    ]
+  },
+  {
+    "name": "Test 42: FIFA 2026 Ticket Research",
+    "description": "Investigacion de tickets del Mundial 2026",
+    "file": "test-42/index.html",
+    "icon": "ticket-alt",
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "research",
+      "fifa",
+      "mundial"
+    ]
+  },
+  {
+    "name": "Test 41: 10 Sports Posts",
+    "description": "Publicacion de 10 posts deportivos en WordPress",
+    "file": "test-41/index.html",
+    "icon": "futbol",
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "wordpress",
+      "sports",
+      "content"
+    ]
+  },
+  {
+    "name": "Test 40: WordPress Auto-Poster",
+    "description": "Auto-poster de noticias en WordPress",
+    "file": "test-40/index.html",
+    "icon": "edit",
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "wordpress",
+      "automation",
+      "sports"
+    ]
+  },
+  {
+    "name": "Test 39: RSS Sports News Fetcher",
+    "description": "Fetcher de noticias deportivas via RSS",
+    "file": "test-39/index.html",
+    "icon": "rss",
+    "status": "PASS",
+    "tags": [
+      "batch-3",
+      "rss",
+      "sports",
+      "news"
+    ]
+  },
+  {
+    "name": "Test 38: WordPress Install & Config",
+    "description": "Instalacion de WordPress en Docker para blog deportivo",
+    "file": "test-38/index.html",
+    "icon": "wordpress",
     "status": "INCOMPLETE",
-    "file": "test-26/index.html",
-    "tags": ["incomplete", "batch-2", "dashboard", "api", "html", "live-data"]
+    "tags": [
+      "batch-3",
+      "wordpress",
+      "docker",
+      "sports"
+    ]
+  },
+  {
+    "name": "Test 37: Account Creation Summary",
+    "description": "Consolidacion de resultados de creacion de cuentas",
+    "file": "test-37/index.html",
+    "icon": "clipboard-list",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-3",
+      "account",
+      "summary"
+    ]
+  },
+  {
+    "name": "Test 36: Account Creation - Stack Overflow",
+    "description": "Registro autonomo de cuenta en Stack Overflow",
+    "file": "test-36/index.html",
+    "icon": "user-plus",
+    "status": "FAIL",
+    "tags": [
+      "batch-3",
+      "account",
+      "stackoverflow"
+    ]
+  },
+  {
+    "name": "Test 35: Account Creation - ProductHunt",
+    "description": "Registro autonomo de cuenta en ProductHunt",
+    "file": "test-35/index.html",
+    "icon": "user-plus",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-3",
+      "account",
+      "producthunt"
+    ]
+  },
+  {
+    "name": "Test 34: Account Creation - HackerNews",
+    "description": "Registro autonomo de cuenta en HackerNews",
+    "file": "test-34/index.html",
+    "icon": "user-plus",
+    "status": "FAIL",
+    "tags": [
+      "batch-3",
+      "account",
+      "hackernews"
+    ]
+  },
+  {
+    "name": "Test 33: Account Creation - Kaggle",
+    "description": "Registro autonomo de cuenta en Kaggle",
+    "file": "test-33/index.html",
+    "icon": "user-plus",
+    "status": "FAIL",
+    "tags": [
+      "batch-3",
+      "account",
+      "kaggle"
+    ]
+  },
+  {
+    "name": "Test 32: Account Creation - Pinterest",
+    "description": "Registro autonomo de cuenta en Pinterest",
+    "file": "test-32/index.html",
+    "icon": "user-plus",
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "account",
+      "pinterest"
+    ]
+  },
+  {
+    "name": "Test 31: Account Creation - Medium",
+    "description": "Registro autonomo de cuenta en Medium",
+    "file": "test-31/index.html",
+    "icon": "user-plus",
+    "status": "PENDING",
+    "tags": [
+      "batch-3",
+      "account",
+      "medium"
+    ]
+  },
+  {
+    "name": "Test 30: Account Creation - CodePen",
+    "description": "Registro autonomo de cuenta en CodePen",
+    "file": "test-30/index.html",
+    "icon": "user-plus",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-3",
+      "account",
+      "codepen"
+    ]
+  },
+  {
+    "name": "Test 29: Account Creation - dev.to",
+    "description": "Registro autonomo de cuenta en dev.to",
+    "file": "test-29/index.html",
+    "icon": "user-plus",
+    "status": "FAIL",
+    "tags": [
+      "batch-3",
+      "account",
+      "devto"
+    ]
+  },
+  {
+    "name": "Test 28: Account Creation - Reddit",
+    "description": "Registro autonomo de cuenta en Reddit",
+    "file": "test-28/index.html",
+    "icon": "user-plus",
+    "status": "FAIL",
+    "tags": [
+      "batch-3",
+      "account",
+      "reddit"
+    ]
   },
   {
     "name": "Test 27: Expense Tracker App",
-    "description": "App de gastos production-ready con Express + SQLite, Chart.js pie chart y deploy a GitHub",
+    "description": "Aplicacion de seguimiento de gastos full-stack",
+    "file": "test-27/index.html",
     "icon": "wallet",
     "status": "INCOMPLETE",
-    "file": "test-27/index.html",
-    "tags": ["incomplete", "batch-2", "express", "sqlite", "chart-js", "full-stack"]
+    "tags": [
+      "batch-2",
+      "app",
+      "express",
+      "sqlite",
+      "chart-js",
+      "full-stack"
+    ]
+  },
+  {
+    "name": "Test 26: Live Dashboard",
+    "description": "Dashboard en vivo con datos de AI news",
+    "file": "test-26/index.html",
+    "icon": "tachometer-alt",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-2",
+      "dashboard",
+      "monitoring"
+    ]
+  },
+  {
+    "name": "Test 25: Custom Toolbox Builder",
+    "description": "Constructor de herramientas Python personalizadas",
+    "file": "test-25/index.html",
+    "icon": "toolbox",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-2",
+      "python",
+      "tools"
+    ]
+  },
+  {
+    "name": "Test 24: URL Shortener App",
+    "description": "Aplicacion acortadora de URLs con Express y SQLite",
+    "file": "test-24/index.html",
+    "icon": "link",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-2",
+      "app",
+      "express",
+      "sqlite",
+      "full-stack"
+    ]
+  },
+  {
+    "name": "Test 23: Gmail Email Automation",
+    "description": "Envio automatizado de emails via Gmail SMTP",
+    "file": "test-23/index.html",
+    "icon": "envelope-open",
+    "status": "PASS",
+    "tags": [
+      "batch-2",
+      "email",
+      "smtp",
+      "automation"
+    ]
+  },
+  {
+    "name": "Test 22: GitHub Repo Automation",
+    "description": "Automatizacion de repositorios GitHub",
+    "file": "test-22/index.html",
+    "icon": "code-branch",
+    "status": "PASS",
+    "tags": [
+      "batch-2",
+      "github",
+      "automation"
+    ]
+  },
+  {
+    "name": "Test 21: Configuracion de Entorno",
+    "description": "Setup y verificacion de herramientas del workspace",
+    "file": "test-21/index.html",
+    "icon": "cogs",
+    "status": "PASS",
+    "tags": [
+      "batch-2",
+      "setup",
+      "environment"
+    ]
+  },
+  {
+    "name": "Test 20: Web Scraping & Chart.js",
+    "description": "Scraping de datos y visualizacion con Chart.js",
+    "file": "test-20/index.html",
+    "icon": "chart-bar",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "scraping",
+      "charts",
+      "visualization"
+    ]
+  },
+  {
+    "name": "Test 19: Research Report",
+    "description": "Generacion de reporte de investigacion extenso",
+    "file": "test-19/index.html",
+    "icon": "book",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-1",
+      "research",
+      "report"
+    ]
+  },
+  {
+    "name": "Test 18: Mail.tm Inbox Monitor",
+    "description": "Monitor de bandeja de entrada de email temporal",
+    "file": "test-18/index.html",
+    "icon": "inbox",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "email",
+      "monitoring"
+    ]
+  },
+  {
+    "name": "Test 17: Temp Email",
+    "description": "Creacion de email temporal via mail.tm API",
+    "file": "test-17/index.html",
+    "icon": "envelope",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-1",
+      "email",
+      "api"
+    ]
+  },
+  {
+    "name": "Test 16: RSS Digest",
+    "description": "Digest de multiples feeds RSS (HN + Lobsters)",
+    "file": "test-16/index.html",
+    "icon": "rss",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-1",
+      "rss",
+      "aggregator"
+    ]
+  },
+  {
+    "name": "Test 15: News Monitor",
+    "description": "Monitor de noticias con RSS y filtros",
+    "file": "test-15/index.html",
+    "icon": "newspaper",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-1",
+      "rss",
+      "news"
+    ]
+  },
+  {
+    "name": "Test 14: Sports API Fixture",
+    "description": "Consulta de fixtures deportivos via API",
+    "file": "test-14/index.html",
+    "icon": "futbol",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-1",
+      "api",
+      "sports"
+    ]
+  },
+  {
+    "name": "Test 13: CSV a SQLite Pipeline",
+    "description": "Pipeline de datos CSV a base de datos SQLite",
+    "file": "test-13/index.html",
+    "icon": "database",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "data",
+      "sqlite",
+      "csv"
+    ]
+  },
+  {
+    "name": "Test 12: Image Downloader Gallery",
+    "description": "Descarga masiva de imagenes y galeria HTML",
+    "file": "test-12/index.html",
+    "icon": "images",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "scraping",
+      "gallery"
+    ]
+  },
+  {
+    "name": "Test 11: Site Watchdog",
+    "description": "Monitor de disponibilidad de sitios web",
+    "file": "test-11/index.html",
+    "icon": "shield-alt",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "monitoring",
+      "alerts"
+    ]
+  },
+  {
+    "name": "Test 10: Analizador de Logs",
+    "description": "Analisis y reporte de archivos de log",
+    "file": "test-10/index.html",
+    "icon": "file-alt",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "logs",
+      "analysis"
+    ]
+  },
+  {
+    "name": "Test 9: Monitor de Precios Web",
+    "description": "Monitoreo automatico de precios con alertas",
+    "file": "test-9/index.html",
+    "icon": "tags",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "scraping",
+      "monitoring"
+    ]
+  },
+  {
+    "name": "Test 8: Docker Todo App",
+    "description": "Aplicacion TODO containerizada con Docker",
+    "file": "test-8/index.html",
+    "icon": "docker",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "docker",
+      "app"
+    ]
+  },
+  {
+    "name": "Test 7: Monitor de Clima Multi-Ciudad",
+    "description": "Dashboard de clima para multiples ciudades",
+    "file": "test-7/index.html",
+    "icon": "cloud-sun",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "api",
+      "weather",
+      "dashboard"
+    ]
+  },
+  {
+    "name": "Test 6: API REST de Tareas",
+    "description": "Backend API REST con Express y SQLite",
+    "file": "test-6/index.html",
+    "icon": "server",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "api",
+      "express",
+      "sqlite"
+    ]
+  },
+  {
+    "name": "Test 5: TODO App",
+    "description": "Aplicacion web de tareas con interfaz interactiva",
+    "file": "test-5/index.html",
+    "icon": "check-square",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-1",
+      "app",
+      "html",
+      "javascript"
+    ]
+  },
+  {
+    "name": "Test 4: API GraphQL SpaceX",
+    "description": "Consulta a API GraphQL de SpaceX para datos de lanzamientos",
+    "file": "test-4/index.html",
+    "icon": "rocket",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "graphql",
+      "api"
+    ]
+  },
+  {
+    "name": "Test 3: Web Scraping de Hockey",
+    "description": "Extraccion de datos deportivos de sitio web",
+    "file": "test-3/index.html",
+    "icon": "hockey-puck",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "scraping",
+      "sports"
+    ]
+  },
+  {
+    "name": "Test 2: API de Tipos de Cambio",
+    "description": "Consulta de API REST para obtener tipos de cambio",
+    "file": "test-2/index.html",
+    "icon": "dollar-sign",
+    "status": "PASS",
+    "tags": [
+      "batch-1",
+      "api",
+      "finance"
+    ]
+  },
+  {
+    "name": "Test 1: Web Scraping CSV",
+    "description": "Scraping de datos web y exportacion a CSV",
+    "file": "test-1/index.html",
+    "icon": "spider",
+    "status": "INCOMPLETE",
+    "tags": [
+      "batch-1",
+      "scraping",
+      "csv"
+    ]
   }
 ]

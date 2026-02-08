@@ -98,6 +98,7 @@
             font-size: 0.7rem; font-weight: 600; margin-left: 8px; vertical-align: middle;
         }
         .badge-pass { background: rgba(76,175,80,0.15); color: #4caf50; }
+        .badge-fail { background: rgba(244,67,54,0.15); color: #f44336; }
         .badge-pending { background: rgba(255,170,0,0.15); color: #ffaa00; }
 
         .no-results {
@@ -128,7 +129,8 @@
         <div class="stats">
             <div class="stat-card"><div class="number" id="stat-total">-</div><div class="label">Proyectos</div></div>
             <div class="stat-card"><div class="number" style="color:#4caf50" id="stat-pass">-</div><div class="label">Completados</div></div>
-            <div class="stat-card"><div class="number" style="color:#ffaa00" id="stat-pending">-</div><div class="label">En progreso</div></div>
+            <div class="stat-card"><div class="number" style="color:#f44336" id="stat-fail">-</div><div class="label">Fallidos</div></div>
+            <div class="stat-card"><div class="number" style="color:#ffaa00" id="stat-pending">-</div><div class="label">Pendientes</div></div>
         </div>
         <div class="filter-bar">
             <div class="search-wrapper">
@@ -138,6 +140,7 @@
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">Todos</button>
                 <button class="filter-btn" data-filter="pass">Completados</button>
+                <button class="filter-btn" data-filter="fail">Fallidos</button>
                 <button class="filter-btn" data-filter="pending">Pendientes</button>
             </div>
         </div>
@@ -168,7 +171,8 @@
             var p = allProjects[i];
             // Status filter
             if (currentFilter === 'pass' && p.status !== 'PASS') continue;
-            if (currentFilter === 'pending' && p.status === 'PASS') continue;
+            if (currentFilter === 'fail' && p.status !== 'FAIL' && p.status !== 'INCOMPLETE') continue;
+            if (currentFilter === 'pending' && p.status !== 'PENDING') continue;
             // Text search
             if (query) {
                 var haystack = ((p.name || '') + ' ' + (p.description || '') + ' ' + (p.tags || []).join(' ')).toLowerCase();
@@ -196,7 +200,7 @@
         for (var i = 0; i < visible.length; i++) {
             var p = visible[i];
             var icon = (p.icon || 'file-code').replace(/^fa-/, '');
-            var bc = p.status === 'PASS' ? 'badge-pass' : 'badge-pending';
+            var bc = p.status === 'PASS' ? 'badge-pass' : (p.status === 'FAIL' || p.status === 'INCOMPLETE') ? 'badge-fail' : 'badge-pending';
             var st = p.status || 'PENDING';
             var href = '/clawdbot/projects/' + (p.file || '');
             var tags = (p.tags || []).slice(0, 4);
@@ -220,13 +224,15 @@
             var projects = JSON.parse(text);
             if (!Array.isArray(projects) || projects.length === 0) throw new Error('Sin proyectos');
             allProjects = projects;
-            var pass = 0, pending = 0;
+            var pass = 0, fail = 0, pending = 0;
             for (var i = 0; i < projects.length; i++) {
                 if (projects[i].status === 'PASS') pass++;
+                else if (projects[i].status === 'FAIL' || projects[i].status === 'INCOMPLETE') fail++;
                 else pending++;
             }
             document.getElementById('stat-total').textContent = projects.length;
             document.getElementById('stat-pass').textContent = pass;
+            document.getElementById('stat-fail').textContent = fail;
             document.getElementById('stat-pending').textContent = pending;
             renderProjects();
         } catch(err) {

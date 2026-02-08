@@ -1,0 +1,495 @@
+{
+  "timestamp": "2026-02-08T07:36:51.512147",
+  "summary": {
+    "total_html_files": 52,
+    "total_links": 236,
+    "internal": {
+      "total": 110,
+      "ok": 69,
+      "broken": 41
+    },
+    "external": {
+      "total": 126,
+      "ok": 97,
+      "redirects": 0,
+      "broken": 29
+    },
+    "anchors": 0
+  },
+  "broken_internal": [
+    {
+      "source": "public/clawdbot/blog/post-barcelona-flick.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-barcelona-flick.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-barcelona-flick.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-river-gallardo.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-river-gallardo.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-river-gallardo.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-liverpool-resurgir.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-liverpool-resurgir.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-liverpool-resurgir.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-arsenal-arteta.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-arsenal-arteta.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-arsenal-arteta.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-city-crisis.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-city-crisis.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-city-crisis.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-boca-gago.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-boca-gago.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-boca-gago.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-mundial-clasificatorias.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-mundial-clasificatorias.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-mundial-clasificatorias.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-madrid-mbappe.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-madrid-mbappe.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-madrid-mbappe.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-mundial-sedes.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-mundial-sedes.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-mundial-sedes.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/blog/post-atletico-simeone.html",
+      "link": "/clawdbot/blog/category.html?cat=premier",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=premier"
+    },
+    {
+      "source": "public/clawdbot/blog/post-atletico-simeone.html",
+      "link": "/clawdbot/blog/category.html?cat=laliga",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=laliga"
+    },
+    {
+      "source": "public/clawdbot/blog/post-atletico-simeone.html",
+      "link": "/clawdbot/blog/category.html?cat=argentina",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/blog/category.html?cat=argentina"
+    },
+    {
+      "source": "public/clawdbot/projects/index.html",
+      "link": "${p.file}",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/projects/${p.file}"
+    },
+    {
+      "source": "public/clawdbot/projects/test-21/index.html",
+      "link": "/clawdbot/IDENTITY.md",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/IDENTITY.md"
+    },
+    {
+      "source": "public/clawdbot/projects/test-21/index.html",
+      "link": "/clawdbot/USER.md",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/USER.md"
+    },
+    {
+      "source": "public/clawdbot/projects/test-21/index.html",
+      "link": "/clawdbot/TOOLS.md",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/TOOLS.md"
+    },
+    {
+      "source": "public/clawdbot/projects/test-21/index.html",
+      "link": "/clawdbot/SKILLS_INVENTORY.md",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/SKILLS_INVENTORY.md"
+    },
+    {
+      "source": "public/clawdbot/projects/test-22/index.html",
+      "link": "/clawdbot/apps/api-tasks/",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/apps/api-tasks/"
+    },
+    {
+      "source": "public/clawdbot/projects/test-12/index.html",
+      "link": "../../../downloads/images/gallery.html",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/downloads/images/gallery.html"
+    },
+    {
+      "source": "public/clawdbot/projects/test-20/index.html",
+      "link": "../../viz/population_top10.html",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/viz/population_top10.html"
+    },
+    {
+      "source": "public/clawdbot/projects/test-34/index.html",
+      "link": "/clawdbot/accounts/hackernews.json",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/accounts/hackernews.json"
+    },
+    {
+      "source": "public/projects/test-30/index.html",
+      "link": "/clawdbot/projects/test-30/test-30.log",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/projects/test-30/test-30.log"
+    },
+    {
+      "source": "public/projects/test-30/index.html",
+      "link": "/clawdbot/accounts/codepen.json",
+      "exists": false,
+      "method": "not_found",
+      "resolved": "public/clawdbot/accounts/codepen.json"
+    }
+  ],
+  "broken_external": [
+    {
+      "source": "public/clawdbot/blog/post-liverpool-resurgir.html",
+      "link": "https://images.unsplash.com/photo-1522778119026-d647f0565c6a?w=1200&h=600&fit=crop",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/blog/post-barcelona-flick.html",
+      "link": "https://images.unsplash.com/photo-1522778119026-d647f0565c6a?w=1200&h=600&fit=crop",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/blog/post-mundial-sedes.html",
+      "link": "https://images.unsplash.com/photo-1522778119026-d647f0565c6a?w=1200&h=600&fit=crop",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/blog/post-madrid-mbappe.html",
+      "link": "https://images.unsplash.com/photo-1560272564-c8304f9e0e90?w=1200&h=600&fit=crop",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-37/index.html",
+      "link": "https://fonts.googleapis.com",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-37/index.html",
+      "link": "https://fonts.gstatic.com",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-37/index.html",
+      "link": "https://codepen.io",
+      "status": 403
+    },
+    {
+      "source": "public/clawdbot/projects/test-37/index.html",
+      "link": "https://medium.com",
+      "status": 403
+    },
+    {
+      "source": "public/clawdbot/projects/test-37/index.html",
+      "link": "https://kaggle.com",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-37/index.html",
+      "link": "https://producthunt.com",
+      "status": 403
+    },
+    {
+      "source": "public/clawdbot/projects/test-37/index.html",
+      "link": "https://reddit.com",
+      "status": 403
+    },
+    {
+      "source": "public/clawdbot/projects/test-29/index.html",
+      "link": "https://fonts.googleapis.com",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-29/index.html",
+      "link": "https://fonts.gstatic.com",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-36/index.html",
+      "link": "https://fonts.googleapis.com",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-36/index.html",
+      "link": "https://stackoverflow.com/users/signup",
+      "status": 403
+    },
+    {
+      "source": "public/clawdbot/projects/test-36/index.html",
+      "link": "https://fonts.gstatic.com",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-23/index.html",
+      "link": "https://fonts.googleapis.com",
+      "status": 404
+    },
+    {
+      "source": "public/clawdbot/projects/test-23/index.html",
+      "link": "https://fonts.gstatic.com",
+      "status": 404
+    },
+    {
+      "source": "public/projects/test-37/index.html",
+      "link": "https://fonts.gstatic.com",
+      "status": 404
+    },
+    {
+      "source": "public/projects/test-37/index.html",
+      "link": "https://codepen.io",
+      "status": 403
+    },
+    {
+      "source": "public/projects/test-37/index.html",
+      "link": "https://fonts.googleapis.com",
+      "status": 404
+    },
+    {
+      "source": "public/projects/test-37/index.html",
+      "link": "https://medium.com",
+      "status": 403
+    },
+    {
+      "source": "public/projects/test-37/index.html",
+      "link": "https://kaggle.com",
+      "status": 404
+    },
+    {
+      "source": "public/projects/test-30/index.html",
+      "link": "https://fonts.gstatic.com",
+      "status": 404
+    },
+    {
+      "source": "public/projects/test-30/index.html",
+      "link": "https://fonts.googleapis.com",
+      "status": 404
+    },
+    {
+      "source": "public/projects/test-30/index.html",
+      "link": "https://codepen.io/accounts/signup/user/free",
+      "status": 403
+    },
+    {
+      "source": "public/projects/test-37/index.html",
+      "link": "https://producthunt.com",
+      "status": 403
+    },
+    {
+      "source": "public/projects/test-38/index.html",
+      "link": "https://fonts.googleapis.com",
+      "status": 404
+    },
+    {
+      "source": "public/projects/test-37/index.html",
+      "link": "https://reddit.com",
+      "status": 403
+    }
+  ],
+  "redirects": [],
+  "corrections": [
+    {
+      "source": "public/projects/test-30/index.html",
+      "broken_link": "/clawdbot/projects/test-30/test-30.log",
+      "suggested": "public/projects/test-30/test-30.log",
+      "reason": "similar_path"
+    },
+    {
+      "source": "public/projects/test-30/index.html",
+      "broken_link": "/clawdbot/accounts/codepen.json",
+      "suggested": "public/clawdbot/projects/index.json",
+      "reason": "similar_path"
+    }
+  ],
+  "pages_with_broken": {
+    "public/clawdbot/projects/test-37/index.html": 7,
+    "public/projects/test-37/index.html": 7,
+    "public/projects/test-30/index.html": 5,
+    "public/clawdbot/blog/post-barcelona-flick.html": 4,
+    "public/clawdbot/blog/post-liverpool-resurgir.html": 4,
+    "public/clawdbot/blog/post-madrid-mbappe.html": 4,
+    "public/clawdbot/blog/post-mundial-sedes.html": 4,
+    "public/clawdbot/projects/test-21/index.html": 4,
+    "public/clawdbot/blog/post-river-gallardo.html": 3,
+    "public/clawdbot/blog/post-arsenal-arteta.html": 3,
+    "public/clawdbot/blog/post-city-crisis.html": 3,
+    "public/clawdbot/blog/post-boca-gago.html": 3,
+    "public/clawdbot/blog/post-mundial-clasificatorias.html": 3,
+    "public/clawdbot/blog/post-atletico-simeone.html": 3,
+    "public/clawdbot/projects/test-36/index.html": 3,
+    "public/clawdbot/projects/test-29/index.html": 2,
+    "public/clawdbot/projects/test-23/index.html": 2,
+    "public/clawdbot/projects/index.html": 1,
+    "public/clawdbot/projects/test-22/index.html": 1,
+    "public/clawdbot/projects/test-12/index.html": 1,
+    "public/clawdbot/projects/test-20/index.html": 1,
+    "public/clawdbot/projects/test-34/index.html": 1,
+    "public/projects/test-38/index.html": 1
+  }
+}
