@@ -3,73 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test 24: Pendiente</title>
+    <title>Test 24: URL Shortener App - INCOMPLETE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #0a0a0f;
-            color: #e0e0e0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            text-align: center;
-            padding: 40px;
-            max-width: 600px;
-        }
-        .icon {
-            font-size: 4rem;
-            color: #ff6b35;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: #f7931e;
-        }
-        p {
-            color: #888;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        .status {
-            display: inline-block;
-            background: #2a2a1a;
-            color: #ffaa00;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-bottom: 30px;
-        }
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: linear-gradient(90deg, #ff6b35, #f7931e);
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: opacity 0.2s;
-        }
-        .back-link:hover { opacity: 0.9; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #e4e4e7; line-height: 1.7; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #14141f, #1a1a2e); border-radius: 16px; padding: 40px; margin-bottom: 30px; border: 1px solid #2a2a3e; }
+        h1 { font-size: 2rem; color: #f7931e; margin-bottom: 10px; }
+        .status { display: inline-block; padding: 4px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; background: rgba(244,67,54,0.15); color: #f44336; }
+        .section { background: #14141f; border-radius: 12px; padding: 30px; margin-bottom: 20px; border: 1px solid #2a2a3e; }
+        .section h2 { color: #ff6b35; margin-bottom: 15px; font-size: 1.3rem; }
+        .section p, .section li { color: #aaa; }
+        code { background: #1a1a2e; padding: 2px 6px; border-radius: 4px; color: #f7931e; font-size: 0.9em; }
+        pre { background: #1a1a2e; padding: 15px; border-radius: 8px; overflow-x: auto; color: #ccc; margin: 10px 0; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .back-link { display: inline-block; margin-top: 30px; color: #ff6b35; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .log-entry { background: #0d0d15; border-left: 3px solid #f44336; padding: 10px 15px; margin: 10px 0; border-radius: 0 8px 8px 0; font-family: monospace; font-size: 0.85em; color: #e57373; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icon"><i class="fas fa-question-circle"></i></div>
-        <h1>Test 24</h1>
-        <div class="status"><i class="fas fa-clock"></i> Documentación Pendiente</div>
-        <p>Este test fue completado pero la página de documentación aún no ha sido generada.<br>
-        Los archivos y resultados del test existen en el workspace.</p>
-        <a href="/clawdbot/" class="back-link">
-            <i class="fas fa-arrow-left"></i> Volver al índice
-        </a>
+        <div class="header">
+            <h1><i class="fas fa-link"></i> Test 24: URL Shortener App</h1>
+            <span class="status"><i class="fas fa-times-circle"></i> INCOMPLETE</span>
+            <p style="color:#888; margin-top:15px;">App completa de acortador de URLs con Express + SQLite backend, frontend dark theme, API REST y deploy a GitHub.</p>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-clipboard-list"></i> Consigna Original</h2>
+            <p>Construir un URL shortener completo en <code>apps/url-shortener/</code>:</p>
+            <ol>
+                <li><code>server.js</code>: Express con POST <code>/api/shorten</code>, GET <code>/api/stats</code>, GET <code>/:code</code> (redirect 302)</li>
+                <li>SQLite storage: <code>urls.db</code> con schema (id, original_url, short_code, clicks, created_at)</li>
+                <li><code>index.html</code>: frontend dark theme con form para acortar, lista de URLs, contador de clicks</li>
+                <li><code>package.json</code> con express y better-sqlite3</li>
+                <li><code>README.md</code> con API docs</li>
+                <li>Crear repo <code>openclaw-url-shortener</code> en GitHub y pushear</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-exclamation-triangle"></i> Que Paso</h2>
+            <p>El bot recibio la tarea (HTTP 202, runId: <code>777c526c-6d60-41f4-b06f-63a6801d347a</code>) pero no genero la pagina de documentacion. Este fue uno de los tests mas complejos del batch 2:</p>
+            <ul>
+                <li>El test fue enviado a las 17:05:26 UTC con un timeout de 600s (10 minutos)</li>
+                <li>La tarea requeria <strong>7 pasos complejos</strong>: crear server.js, SQLite schema, frontend HTML, package.json, README, crear repo en GitHub via API, y hacer git push</li>
+                <li>El bot probablemente se atasco en la <strong>creacion/push del repositorio GitHub</strong> - los logs muestran errores de git push (<code>repository not found</code>, <code>no configured push destination</code>) en otros tests del batch 2</li>
+                <li>Generar multiples archivos interrelacionados (server que importa SQLite, frontend que llama a la API) es una tarea que consume mucho contexto del agente</li>
+                <li>El bot pudo haber creado algunos archivos locales pero fallado en el paso de GitHub, y no haber llegado a generar la documentacion HTML</li>
+                <li>La dependencia de <code>better-sqlite3</code> (paquete nativo de Node.js) podria haber causado problemas si el bot intento hacer <code>npm install</code></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-redo"></i> Pasos para Reintentar</h2>
+            <ol>
+                <li>Verificar si <code>apps/url-shortener/</code> existe con archivos parciales</li>
+                <li>Separar la tarea en dos: primero crear los archivos, luego hacer el push a GitHub</li>
+                <li>Verificar credenciales de GitHub: <code>curl -H "Authorization: token TOKEN" https://api.github.com/user</code></li>
+                <li>Aumentar timeout a 900s para esta tarea multi-paso</li>
+                <li>Considerar no requerir el push a GitHub como parte del test</li>
+                <li>Reenviar con <code>sessionKey: "hook:batch2:24"</code></li>
+            </ol>
+        </div>
+
+        <a href="/clawdbot/projects/" class="back-link"><i class="fas fa-arrow-left"></i> Volver a proyectos</a>
     </div>
 </body>
 </html>

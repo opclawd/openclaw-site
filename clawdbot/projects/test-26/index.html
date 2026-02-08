@@ -3,73 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test 26: Pendiente</title>
+    <title>Test 26: Live Dashboard - INCOMPLETE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #0a0a0f;
-            color: #e0e0e0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            text-align: center;
-            padding: 40px;
-            max-width: 600px;
-        }
-        .icon {
-            font-size: 4rem;
-            color: #ff6b35;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: #f7931e;
-        }
-        p {
-            color: #888;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        .status {
-            display: inline-block;
-            background: #2a2a1a;
-            color: #ffaa00;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-bottom: 30px;
-        }
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: linear-gradient(90deg, #ff6b35, #f7931e);
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: opacity 0.2s;
-        }
-        .back-link:hover { opacity: 0.9; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #e4e4e7; line-height: 1.7; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #14141f, #1a1a2e); border-radius: 16px; padding: 40px; margin-bottom: 30px; border: 1px solid #2a2a3e; }
+        h1 { font-size: 2rem; color: #f7931e; margin-bottom: 10px; }
+        .status { display: inline-block; padding: 4px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; background: rgba(244,67,54,0.15); color: #f44336; }
+        .section { background: #14141f; border-radius: 12px; padding: 30px; margin-bottom: 20px; border: 1px solid #2a2a3e; }
+        .section h2 { color: #ff6b35; margin-bottom: 15px; font-size: 1.3rem; }
+        .section p, .section li { color: #aaa; }
+        code { background: #1a1a2e; padding: 2px 6px; border-radius: 4px; color: #f7931e; font-size: 0.9em; }
+        pre { background: #1a1a2e; padding: 15px; border-radius: 8px; overflow-x: auto; color: #ccc; margin: 10px 0; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .back-link { display: inline-block; margin-top: 30px; color: #ff6b35; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .log-entry { background: #0d0d15; border-left: 3px solid #f44336; padding: 10px 15px; margin: 10px 0; border-radius: 0 8px 8px 0; font-family: monospace; font-size: 0.85em; color: #e57373; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icon"><i class="fas fa-question-circle"></i></div>
-        <h1>Test 26</h1>
-        <div class="status"><i class="fas fa-clock"></i> Documentación Pendiente</div>
-        <p>Este test fue completado pero la página de documentación aún no ha sido generada.<br>
-        Los archivos y resultados del test existen en el workspace.</p>
-        <a href="/clawdbot/" class="back-link">
-            <i class="fas fa-arrow-left"></i> Volver al índice
-        </a>
+        <div class="header">
+            <h1><i class="fas fa-tachometer-alt"></i> Test 26: Live Dashboard</h1>
+            <span class="status"><i class="fas fa-times-circle"></i> INCOMPLETE</span>
+            <p style="color:#888; margin-top:15px;">Dashboard con datos en vivo: exchange rates, clima Buenos Aires, noticias AI, system info - con auto-refresh cada 60s.</p>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-clipboard-list"></i> Consigna Original</h2>
+            <p>Construir un dashboard con datos live en <code>apps/dashboard/</code>:</p>
+            <ol>
+                <li>Crear <code>scripts/update_dashboard_data.py</code> que consulte exchange rates (open.er-api.com), clima Buenos Aires (open-meteo.com), lea <code>exports/ai_news.json</code>, y guarde todo en <code>public/dashboard/data.json</code></li>
+                <li>Crear <code>public/dashboard/index.html</code>: dark theme, 4 paneles (Currencies, Weather, AI News, System Info), auto-refresh cada 60s via fetch</li>
+                <li>Ejecutar <code>update_dashboard_data.py</code> una vez</li>
+                <li>Enviar por Telegram el link al dashboard</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-exclamation-triangle"></i> Que Paso</h2>
+            <p>El bot recibio la tarea (HTTP 202, runId: <code>7b4cf6e5-7a83-44be-9fe4-af1770382f28</code>) pero no genero la pagina de documentacion. Multiples factores contribuyeron:</p>
+            <div class="log-entry">embedded run timeout: timeoutMs=300000</div>
+            <ul>
+                <li>El test fue enviado a las 17:09:31 UTC con timeout de 300s (5 minutos)</li>
+                <li><strong>Dependencia rota</strong>: el script necesitaba leer <code>exports/ai_news.json</code> que debio ser generado por el Test 15 (News Monitor), pero ese test tambien fallo. Esto causo un <strong>efecto cascada</strong></li>
+                <li>El bot debio crear un script Python que llama 2 APIs externas (exchange rates + clima), lee un archivo local, y genera un JSON consolidado</li>
+                <li>Ademas debio crear un dashboard HTML completo con 4 paneles y logica de auto-refresh con <code>fetch()</code></li>
+                <li>Los logs muestran que el agente recibio errores <code>web_fetch failed (401)</code> al intentar acceder a <code>back.pulpouplatform.com</code>, lo que sugiere que intento verificar el dashboard desplegado pero fallo por autenticacion nginx</li>
+                <li>La combinacion de dependencia faltante + multiples APIs + HTML complejo + verificacion hizo que el timeout fuera insuficiente</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-redo"></i> Pasos para Reintentar</h2>
+            <ol>
+                <li><strong>Primero</strong> ejecutar Test 15 (News Monitor) para generar <code>exports/ai_news.json</code></li>
+                <li>Si ai_news.json no esta disponible, modificar la consigna para omitir ese panel o usar datos hardcoded</li>
+                <li>Verificar APIs: <code>curl -s https://open.er-api.com/v6/latest/USD | head -5</code></li>
+                <li>Pre-crear directorio: <code>mkdir -p public/dashboard/</code></li>
+                <li>Aumentar timeout a 600s</li>
+                <li>Reenviar con <code>sessionKey: "hook:batch2:26"</code></li>
+            </ol>
+        </div>
+
+        <a href="/clawdbot/projects/" class="back-link"><i class="fas fa-arrow-left"></i> Volver a proyectos</a>
     </div>
 </body>
 </html>

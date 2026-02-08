@@ -3,73 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test 19: Pendiente</title>
+    <title>Test 19: Research Report - INCOMPLETE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #0a0a0f;
-            color: #e0e0e0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            text-align: center;
-            padding: 40px;
-            max-width: 600px;
-        }
-        .icon {
-            font-size: 4rem;
-            color: #ff6b35;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: #f7931e;
-        }
-        p {
-            color: #888;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        .status {
-            display: inline-block;
-            background: #2a2a1a;
-            color: #ffaa00;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-bottom: 30px;
-        }
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: linear-gradient(90deg, #ff6b35, #f7931e);
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: opacity 0.2s;
-        }
-        .back-link:hover { opacity: 0.9; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #e4e4e7; line-height: 1.7; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #14141f, #1a1a2e); border-radius: 16px; padding: 40px; margin-bottom: 30px; border: 1px solid #2a2a3e; }
+        h1 { font-size: 2rem; color: #f7931e; margin-bottom: 10px; }
+        .status { display: inline-block; padding: 4px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; background: rgba(244,67,54,0.15); color: #f44336; }
+        .section { background: #14141f; border-radius: 12px; padding: 30px; margin-bottom: 20px; border: 1px solid #2a2a3e; }
+        .section h2 { color: #ff6b35; margin-bottom: 15px; font-size: 1.3rem; }
+        .section p, .section li { color: #aaa; }
+        code { background: #1a1a2e; padding: 2px 6px; border-radius: 4px; color: #f7931e; font-size: 0.9em; }
+        pre { background: #1a1a2e; padding: 15px; border-radius: 8px; overflow-x: auto; color: #ccc; margin: 10px 0; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .back-link { display: inline-block; margin-top: 30px; color: #ff6b35; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .log-entry { background: #0d0d15; border-left: 3px solid #f44336; padding: 10px 15px; margin: 10px 0; border-radius: 0 8px 8px 0; font-family: monospace; font-size: 0.85em; color: #e57373; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icon"><i class="fas fa-question-circle"></i></div>
-        <h1>Test 19</h1>
-        <div class="status"><i class="fas fa-clock"></i> Documentación Pendiente</div>
-        <p>Este test fue completado pero la página de documentación aún no ha sido generada.<br>
-        Los archivos y resultados del test existen en el workspace.</p>
-        <a href="/clawdbot/" class="back-link">
-            <i class="fas fa-arrow-left"></i> Volver al índice
-        </a>
+        <div class="header">
+            <h1><i class="fas fa-book-open"></i> Test 19: Research Report</h1>
+            <span class="status"><i class="fas fa-times-circle"></i> INCOMPLETE</span>
+            <p style="color:#888; margin-top:15px;">Generacion autonoma de un reporte extenso (1500+ palabras) sobre web scraping best practices 2026 con multiples secciones estructuradas.</p>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-clipboard-list"></i> Consigna Original</h2>
+            <p>Genera <code>reports/scraping_2026.md</code>: reporte sobre web scraping best practices 2026 con secciones: Resumen, Mejores Practicas (8+ puntos), Herramientas (tabla), Legal, Fuentes. Minimo 1500 palabras. Usa tus conocimientos.</p>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-exclamation-triangle"></i> Que Paso</h2>
+            <p>El bot recibio la tarea (HTTP 202, runId: <code>629da094-b8ff-4cc6-b9f6-eb5f88aa9995</code>) pero no genero la pagina de documentacion. Este test tenia un timeout generoso de 240s pero aun asi no completo:</p>
+            <ul>
+                <li>El test fue enviado a las 05:52:50 UTC, el <strong>penultimo test del batch 1</strong> (test 19 de 20)</li>
+                <li>La tarea era puramente generativa (usar conocimientos del modelo, sin APIs externas), pero requeria generar <strong>1500+ palabras de contenido estructurado</strong></li>
+                <li>El bot debio: generar el reporte Markdown completo + crear la pagina HTML de documentacion + actualizar index.json - todo esto en una sola sesion</li>
+                <li>Generar texto largo con formato Markdown (tablas, secciones, listas) consume <strong>muchos tokens de salida</strong>, lo que puede haber excedido los limites del contexto del agente</li>
+                <li>El agente pudo haber generado parte del reporte pero no haber tenido suficiente "runway" para completar la documentacion HTML</li>
+                <li>Posible que el archivo <code>reports/scraping_2026.md</code> se haya generado parcialmente</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-redo"></i> Pasos para Reintentar</h2>
+            <ol>
+                <li>Verificar si <code>reports/scraping_2026.md</code> existe (puede estar incompleto)</li>
+                <li>Aumentar timeout a 360s - la generacion de texto largo necesita mas tiempo</li>
+                <li>Considerar dividir en dos pasos: primero generar el reporte .md, luego la pagina HTML</li>
+                <li>Ejecutar <strong>aislado</strong> como unico test activo para maximizar recursos del agente</li>
+                <li>Reenviar con <code>sessionKey: "hook:testv3:19"</code></li>
+            </ol>
+        </div>
+
+        <a href="/clawdbot/projects/" class="back-link"><i class="fas fa-arrow-left"></i> Volver a proyectos</a>
     </div>
 </body>
 </html>
