@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-08T05:05:01.297Z",
-  "cpu": 38,
+  "timestamp": "2026-02-08T05:25:01.358Z",
+  "cpu": 23,
   "memory": 58,
   "disk": 15,
-  "uptime": 201088,
+  "uptime": 202288,
   "hostname": "plp-backoffice-01",
-  "load_average": "0.79, 0.64, 0.51"
+  "load_average": "0.71, 0.79, 0.67"
 }
